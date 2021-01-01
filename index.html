@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Book Keeper</title>
+  <meta name="description" content="Find books and magazines easily using ISBN, title, or author searches.  Search using ISBN-10 or ISBN-13. Use our search engine to find book information for free.">
+  <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+  
+<div class="wrapper">
+  <main class="page-content">
+    <section class="section section__hero">
+      <h1 class="hero-title">Organize your list</h1>
+      <h3 class="hero-title--content">The book keeper service allows you to find books and magazines by their ISBN, title or autor name. Organizes the data to a suitable MLA format to be added to the bibliography list for your article.</h3>
+      <div class="hero-search">
+        <h3 class="hero-search--title">How to use?</h3>
+        <div class="adblock adblock-left"></div>
+          <div class="hero-search--content">Type ISBN, title or autor name and press the search button. Then choose the type of format you need and save the result.</div>
+          <div class="hero-search--input">
+            <input class="search-input" type="text" placeholder="Enter ISBN, title or autor name">
+            <button class="search-button">Search</button>
+          </div>
+        <div class="adblock adblock-left"></div>
+      </div>
+    </section>
+
+    <section class="section section__form">
+      <form action="" class="form-selection">
+        <h3 class="form-selection--title">Enter the data manually:</h3>
+        <div class="form-selection--widget">
+          <fieldset>
+            <legend class="form-selection--widget--legend">Select the standard</legend>
+            
+              <div class="form-selection--widget--controlgroup">
+                <ul class="selectors">
+                  <li class="selectors__item selector">
+                    <select name="standard" class="sel">
+                      <option value="apa7">APA-7</option>
+                      <option value="mla8">MLA-8</option>
+                    </select>
+                  </li>
+                  <li class="selectors__item">
+                    <input type="radio" name="citation" id="book">
+                    <label for="book">Book</label>
+                  </li>
+                  <li class="selectors__item">
+                    <input type="radio" name="citation" id="encyclopedia">
+                    <label for="encyclopedia">Encyclopedia & Dictionary</label>
+                  </li>
+                  <li class="selectors__item">
+                    <input type="radio" name="citation" id="article">
+                    <label for="article">Magazine & Newspaper Articles</label>
+                  </li>
+                  <li class="selectors__item">
+                    <input type="radio" name="citation" id="website">
+                    <label for="website">Website or Webpage</label>
+                  </li>    
+                </ul>
+              </div> 
+          </fieldset>
+          <br>
+        </div>
+      </form>
+    </section>
+  </main>
+</div>
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="./main.js"></script>
+</body>
+</html>
