@@ -65,21 +65,21 @@
         </div>
 
         <div class="form-selection--input">
-          <ul class="form-selection--input--list">
-              <li class="form-selection--input--item">
-                <input type="text" name="firstNameBook" id="firstNameBook" class="textInput" placeholder="Autor's first name">
+          <ul class="form-selection--input--list cloneList">
+              <li class="form-selection--input--item authorName">
+                <input type="text" name="firstName" id="firstName" class="textInput" placeholder="Autor's first name">
+              </li>
+              <li class="form-selection--input--item authorMiddleName">
+                <input type="text" name="middleName" id="middleName" class="textInput" placeholder="Autor's middle name">
+              </li>
+              <li class="form-selection--input--item authorLastName">
+                <input type="text" name="lastName" id="lastName" class="textInput" placeholder="Autor's last name">
               </li>
               <li class="form-selection--input--item">
-                <input type="text" name="middleNameBook" id="middleNameBook" class="textInput" placeholder="Autor's middle name">
+                <input type="text" name="yearOfPublication" id="yearOfPublicationBook" class="textInput" placeholder="Year of publication">
               </li>
               <li class="form-selection--input--item">
-                <input type="text" name="lastNameBook" id="lastNameBook" class="textInput" placeholder="Autor's last name">
-              </li>
-              <li class="form-selection--input--item">
-                <input type="text" name="yearOfPublicationBook" id="yearOfPublicationBook" class="textInput" placeholder="Year of publication">
-              </li>
-              <li class="form-selection--input--item">
-                <input type="text" name="titleBook" id="titleBook" class="textInput" placeholder="Title of work">
+                <input type="text" name="title" id="title" class="textInput" placeholder="Title of work">
               </li>
               <li class="form-selection--input--item">
                 <input type="text" name="Location" id="Location" class="textInput" placeholder="City of publication">
@@ -88,7 +88,7 @@
                 <input type="text" name="Publisher" id="Publisher" class="textInput" placeholder="Publishing company">
               </li>
               <li class="form-selection--input--item">
-                <button class="input-button">Add one more author</button>
+                <button class="input-button" id="addAuthor">Add one more author</button>
               </li>
           </ul>
         </div>
