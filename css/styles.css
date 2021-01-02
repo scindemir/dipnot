@@ -8,10 +8,6 @@ html {
     html {
       font-size: 16px; } }
 
-html,
-body {
-  height: 100%; }
-
 .page-content {
   min-height: 100%; }
   @media (min-width: 768px) {
@@ -111,19 +107,21 @@ img {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 15px;
   height: 40px;
   width: 46%;
   border-radius: 10px;
   padding: 3px;
-  border-color: rgba(0, 0, 0, 0.3); }
+  border-color: rgba(0, 0, 0, 0.3);
+  vertical-align: middle; }
   .search-input:focus {
     outline: none; }
   .search-input:active {
     opacity: 0.6; }
   @media screen and (max-width: 480px) {
     .search-input {
-      width: 50%; } }
+      width: 50%;
+      font-size: 14px; } }
 
 .search-button {
   font-family: 'Roboto', sans-serif;
@@ -131,8 +129,9 @@ img {
   width: 100px;
   background-color: #607ed2;
   color: #fff;
-  border-color: #fff;
-  border-radius: 8px; }
+  border: none;
+  border-radius: 8px;
+  vertical-align: middle; }
   .search-button:hover {
     background-color: #8499d1; }
   .search-button:focus {
@@ -155,10 +154,27 @@ img {
   letter-spacing: 1px;
   padding: 0 6px 0 6px; }
 
+.form-selection--input--list {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 2% 0 2% 2%; }
+
+.form-selection--input--item {
+  margin-right: 2%;
+  margin-bottom: 1%; }
+  .form-selection--input--item:last-child {
+    margin-right: 0; }
+
+.form-selection--transform {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1%; }
+
 .selectors {
   display: flex;
   flex-direction: row; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1020px) {
     .selectors {
       flex-direction: column; } }
   .selectors__item {
@@ -176,6 +192,9 @@ img {
         margin-bottom: 6px; }
         .selectors__item:last-child {
           margin-bottom: 0; } }
+    @media screen and (max-width: 1020px) {
+      .selectors__item {
+        padding: 0; } }
     .selectors__item.selector {
       background: #ffffff;
       border: none;
@@ -184,4 +203,42 @@ img {
 .sel {
   height: 28px;
   width: 100%;
+  min-width: 82px;
   padding: 0 10px 0 10px; }
+
+.textInput {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  height: 25;
+  width: 200px;
+  color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  padding: 3px;
+  padding-left: 8px;
+  border-color: rgba(0, 0, 0, 0.2); }
+  .textInput:focus {
+    outline: none; }
+  .textInput:active {
+    opacity: 0.6; }
+
+.input-button {
+  padding: 0 10px 0 10px;
+  border: 2px solid #607ed2;
+  background: #ffffff;
+  opacity: 0.7;
+  font-weight: bolder;
+  color: #000000;
+  font-family: Arial,Helvetica,sans-serif;
+  border-radius: 4px;
+  text-transform: uppercase;
+  height: 26px;
+  width: 200px; }
+
+.transform-button {
+  margin-right: 1%; }
+
+#yourResult {
+  border: 3px;
+  height: 200px;
+  border-style: groove;
+  padding: 10px; }

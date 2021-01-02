@@ -15,7 +15,7 @@
   <main class="page-content">
     <section class="section section__hero">
       <h1 class="hero-title">Organize your list</h1>
-      <h3 class="hero-title--content">The book keeper service allows you to find books and magazines by their ISBN, title or autor name. Organizes the data to a suitable MLA format to be added to the bibliography list for your article.</h3>
+      <h3 class="hero-title--content">The book keeper service allows you to find books and magazines by their ISBN, title or autor name. Organizes the data to a suitable APA-7 or MLA-8 format to be added to the bibliography list for your article.</h3>
       <div class="hero-search">
         <h3 class="hero-search--title">How to use?</h3>
         <div class="adblock adblock-left"></div>
@@ -62,9 +62,41 @@
                 </ul>
               </div> 
           </fieldset>
-          <br>
+        </div>
+
+        <div class="form-selection--input">
+          <ul class="form-selection--input--list">
+              <li class="form-selection--input--item">
+                <input type="text" name="firstNameBook" id="firstNameBook" class="textInput" placeholder="Autor's first name">
+              </li>
+              <li class="form-selection--input--item">
+                <input type="text" name="middleNameBook" id="middleNameBook" class="textInput" placeholder="Autor's middle name">
+              </li>
+              <li class="form-selection--input--item">
+                <input type="text" name="lastNameBook" id="lastNameBook" class="textInput" placeholder="Autor's last name">
+              </li>
+              <li class="form-selection--input--item">
+                <input type="text" name="yearOfPublicationBook" id="yearOfPublicationBook" class="textInput" placeholder="Year of publication">
+              </li>
+              <li class="form-selection--input--item">
+                <input type="text" name="titleBook" id="titleBook" class="textInput" placeholder="Title of work">
+              </li>
+              <li class="form-selection--input--item">
+                <input type="text" name="Location" id="Location" class="textInput" placeholder="City of publication">
+              </li>
+              <li class="form-selection--input--item">
+                <input type="text" name="Publisher" id="Publisher" class="textInput" placeholder="Publishing company">
+              </li>
+              <li class="form-selection--input--item">
+                <button class="input-button">Add one more author</button>
+              </li>
+          </ul>
+        </div>
+        <div class="form-selection--transform">
+          <button class="search-button transform-button" id="transform">Transform</button>
         </div>
       </form>
+      <div class="form-selection--result" id="yourResult" placeholder="Your result"></div>
     </section>
   </main>
 </div>
